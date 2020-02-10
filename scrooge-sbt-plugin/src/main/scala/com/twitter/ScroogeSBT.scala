@@ -45,6 +45,7 @@ object ScroogeSBT extends AutoPlugin {
       compiler.strict = !disableStrict
       compiler.scalaWarnOnJavaNSFallback = scalaWarnOnJavaNSFallback
       compiler.defaultNamespace = defaultNamespace
+      compiler.genAdapt = true
       compiler.language = language.toLowerCase
       compiler.run()
     } finally {
